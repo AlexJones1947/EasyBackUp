@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/contacts_item"
+        android:icon="@drawable/allcontact"
+        android:title="@string/contacts"/>
+    <item
+        android:id="@+id/backups_item"
+        android:icon="@drawable/backup_icon"
+        android:title="@string/backups"/>
+    <item
+        android:id="@+id/more_item"
+        android:icon="@drawable/setting"
+        android:title="@string/settings"/>
+</menu>

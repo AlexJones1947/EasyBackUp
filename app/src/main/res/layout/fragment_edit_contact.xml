@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/toolbar_color">
+
+
+                <TextView
+                    android:id="@+id/title_editcontact_tv"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/edit_contact"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/title_done_tv"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:clickable="true"
+                    android:text="@string/done"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/title_cancel_tv"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="true"
+                    android:text="@string/cancel"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/edit_cotacts_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/image_Description"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/contacts" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/edit_contact_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/edit_contact_company_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/company"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/edit_contact_title_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/title"
+                    android:inputType="text" />
+
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="#E0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edit_contact_mobile_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.30"
+                        android:text="@string/mobile"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_contact_mobile_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.70"
+                        android:hint="@string/phone"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="#E0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edit_contact_work_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.30"
+                        android:text="@string/work"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_contact_work_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.70"
+                        android:hint="@string/phone"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="#E0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edit_contact_home_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.30"
+                        android:text="@string/home"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_contact_home_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.70"
+                        android:hint="@string/phone"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="#E0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edit_contact_work_email_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.30"
+                        android:text="@string/work"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_contact_work_email_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.70"
+                        android:hint="@string/e_mail"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="#E0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edit_contact_home_email_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.30"
+                        android:text="@string/home"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/edit_contact_home_email_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.70"
+                        android:hint="@string/e_mail"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="#E0E0E0" />
+
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="#E0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edit_contact_address_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.30"
+                        android:text="@string/address"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.70"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edit_contact_street2_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:hint="@string/street"
+                            android:inputType="textAutoCorrect" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edit_contact_city_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.50"
+                                android:hint="@string/city"
+                                android:inputType="textAutoCorrect" />
+
+                            <EditText
+                                android:id="@+id/edit_contact_pincode_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.50"
+                                android:hint="@string/pin_code"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/edit_contact_state_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:hint="@string/state"
+                            android:inputType="textAutoCorrect" />
+
+                        <EditText
+                            android:id="@+id/edit_contact_country_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:hint="@string/country"
+                            android:inputType="textAutoCorrect" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="#E0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edit_contact_birthdate_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.30"
+                        android:text="@string/birthday"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/edit_select_contact_birthdate_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.70"
+                        android:clickable="true"
+                        android:hint="@string/birthdate"
+                        android:textSize="19sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
